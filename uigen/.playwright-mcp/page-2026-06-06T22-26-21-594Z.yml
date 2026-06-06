@@ -1,0 +1,109 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e15]:
+          - generic [ref=e52]:
+            - generic [ref=e55]: Create a pricing card component with a title, price, feature list, and a call-to-action button
+            - img [ref=e58]
+          - generic [ref=e74]:
+            - img [ref=e77]
+            - generic [ref=e82]:
+              - generic [ref=e85]: Created App.jsx
+              - separator [ref=e86]
+              - generic [ref=e87]:
+                - paragraph [ref=e88]: "Done. Created a pricing card component with:"
+                - list [ref=e89]:
+                  - listitem [ref=e90]:
+                    - strong [ref=e91]: Dark, premium aesthetic
+                    - text: with slate gradients and emerald accents
+                  - listitem [ref=e92]:
+                    - strong [ref=e93]: Highlighted variant
+                    - text: for the "most popular" tier with scale effect and glowing borders
+                  - listitem [ref=e94]:
+                    - strong [ref=e95]: Strong typography hierarchy
+                    - text: with bold titles and micro-labels
+                  - listitem [ref=e96]:
+                    - strong [ref=e97]: Feature list
+                    - text: with custom checkmark circles
+                  - listitem [ref=e98]:
+                    - strong [ref=e99]: Interactive CTA button
+                    - text: with hover lift effect and gradient styling
+                  - listitem [ref=e100]:
+                    - strong [ref=e101]: Decorative blur accent
+                    - text: in the background for depth
+                - paragraph [ref=e102]: The component is reusable and accepts props for customization.
+        - generic [ref=e23]:
+          - textbox "Describe the React component you want to create..." [ref=e24]
+          - button [disabled] [ref=e25]:
+            - img [ref=e26]
+    - separator [ref=e29]
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - tablist [ref=e34]:
+          - tab "Preview" [selected] [ref=e35]
+          - tab "Code" [ref=e36]
+        - generic [ref=e37]:
+          - button "Sign In" [ref=e38]
+          - button "Sign Up" [ref=e39]
+      - iframe [ref=e103]:
+        - generic [ref=f4e3]:
+          - generic [ref=f4e7]:
+            - heading "Professional" [level=3] [ref=f4e8]
+            - paragraph [ref=f4e9]: Everything you need to scale
+            - generic [ref=f4e11]:
+              - generic [ref=f4e12]: $49
+              - generic [ref=f4e13]: per month
+            - button "Get Started" [ref=f4e14] [cursor=pointer]
+            - generic [ref=f4e15]:
+              - paragraph [ref=f4e16]: What's Included
+              - list [ref=f4e17]:
+                - listitem [ref=f4e18]:
+                  - img [ref=f4e20]
+                  - generic [ref=f4e22]: Up to 10,000 API calls
+                - listitem [ref=f4e23]:
+                  - img [ref=f4e25]
+                  - generic [ref=f4e27]: Advanced analytics dashboard
+                - listitem [ref=f4e28]:
+                  - img [ref=f4e30]
+                  - generic [ref=f4e32]: Priority email support
+                - listitem [ref=f4e33]:
+                  - img [ref=f4e35]
+                  - generic [ref=f4e37]: Custom integrations
+                - listitem [ref=f4e38]:
+                  - img [ref=f4e40]
+                  - generic [ref=f4e42]: Team collaboration tools
+                - listitem [ref=f4e43]:
+                  - img [ref=f4e45]
+                  - generic [ref=f4e47]: Monthly reports
+          - generic [ref=f4e51]:
+            - generic [ref=f4e52]: Most Popular
+            - heading "Enterprise" [level=3] [ref=f4e53]
+            - paragraph [ref=f4e54]: For large-scale operations
+            - generic [ref=f4e56]:
+              - generic [ref=f4e57]: $199
+              - generic [ref=f4e58]: per month
+            - button "Contact Sales" [ref=f4e59] [cursor=pointer]
+            - generic [ref=f4e60]:
+              - paragraph [ref=f4e61]: What's Included
+              - list [ref=f4e62]:
+                - listitem [ref=f4e63]:
+                  - img [ref=f4e65]
+                  - generic [ref=f4e67]: Unlimited API calls
+                - listitem [ref=f4e68]:
+                  - img [ref=f4e70]
+                  - generic [ref=f4e72]: Real-time analytics
+                - listitem [ref=f4e73]:
+                  - img [ref=f4e75]
+                  - generic [ref=f4e77]: 24/7 phone & email support
+                - listitem [ref=f4e78]:
+                  - img [ref=f4e80]
+                  - generic [ref=f4e82]: Custom integrations
+                - listitem [ref=f4e83]:
+                  - img [ref=f4e85]
+                  - generic [ref=f4e87]: Advanced team management
+                - listitem [ref=f4e88]:
+                  - img [ref=f4e90]
+                  - generic [ref=f4e92]: Weekly reports & insights
+  - alert [ref=e51]
