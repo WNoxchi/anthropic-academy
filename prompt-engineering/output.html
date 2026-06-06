@@ -1,0 +1,268 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">8.3 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">100.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a strength/power athlete (weightlifter) needing protein-focused meals distributed across the day with strategic calorie surplus</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 85 kg<br><strong>goal:</strong> Build muscle and strength with a calorie surplus for weightlifting<br><strong>restrictions:</strong> None</td>
+                <td class="criteria">• Meal plan covers one full day with at least 4 eating occasions<br>• Provides protein-focused meals with minimum 2.0g protein per kg bodyweight (170g total)<br>• Includes calorie surplus of 300-500 calories above maintenance for muscle building<br>• Meals are compact and concise (brief descriptions, not lengthy recipes)</td>
+                <td class="output"><pre># One-Day Muscle-Building Meal Plan for Weightlifter
+
+Here is a one-day meal plan for an athlete aiming to build muscle and strength with a calorie surplus:
+
+* **Calorie Target:** Approximately 3,200 calories
+* **Macronutrient Breakdown:** Protein (200g), Fat (107g), Carbs (400g)
+
+## Meal Plan:
+
+* **Breakfast (7:00 AM):** Scrambled eggs (3 whole eggs + 150g egg whites) with whole wheat toast (60g) and butter (10g). Orange juice (250g).
+  * Protein: 45g, Fat: 18g, Carbs: 45g
+
+* **Mid-Morning Snack (10:00 AM):** Banana (150g) with peanut butter (35g) and whole milk (240g).
+  * Protein: 18g, Fat: 17g, Carbs: 55g
+
+* **Pre-Workout Snack (12:30 PM):** White rice (150g cooked) with honey (20g).
+  * Protein: 3g, Fat: 1g, Carbs: 70g
+
+* **Lunch (2:00 PM):** Lean ground beef (170g, 90/10) with brown rice (180g cooked), mixed vegetables (100g), and olive oil (15g).
+  * Protein: 48g, Fat: 20g, Carbs: 65g
+
+* **Post-Workout Snack (5:00 PM):** Chocolate protein powder (30g) blended with oats (50g dry), banana (100g), and whole milk (240g).
+  * Protein: 38g, Fat: 8g, Carbs: 65g
+
+* **Dinner (7:30 PM):** Grilled chicken breast (200g) with sweet potato (250g) and broccoli (150g) with olive oil (10g).
+  * Protein: 42g, Fat: 15g, Carbs: 70g
+
+* **Evening Snack (9:30 PM):** Greek yogurt (200g, full-fat) with granola (40g) and berries (80g).
+  * Protein: 20g, Fat: 8g, Carbs: 50g
+
+This meal plan prioritizes high-quality protein sources distributed throughout the day, complex carbohydrates for sustained energy and recovery, and healthy fats to support hormone production and overall performance.</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements with clear daily caloric total, complete macronutrient breakdown, and detailed meals with portions and timing. It meets all secondary criteria: covers a full day with 7 eating occasions (exceeds 4 minimum), provides 200g protein (exceeds 170g minimum), includes appropriate calorie surplus for muscle building, and uses concise food descriptions. The only minor issue is that the plan is slightly more detailed than 'compact and concise' requires, though this is a minor deviation that doesn't undermine the quality of the meal plan itself.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a sport requiring weight management (boxer or wrestler) needing balanced nutrition within a specific caloric deficit while maintaining performance</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178 cm<br><strong>weight:</strong> 75 kg<br><strong>goal:</strong> Lose 3 kg over 2 weeks while maintaining boxing performance and strength<br><strong>restrictions:</strong> No dairy, no red meat</td>
+                <td class="criteria">• Meal plan spans exactly 1 day with breakfast, lunch, dinner, and snacks<br>• Total daily calories support a moderate deficit (approximately 500-750 kcal below maintenance)<br>• All meals respect dietary restrictions (dairy-free, no red meat)<br>• Includes adequate protein (minimum 1.6g per kg body weight) to preserve muscle during weight loss</td>
+                <td class="output"><pre># One-Day Meal Plan for Boxing Athlete
+
+Here is a one-day meal plan for an athlete aiming to lose 3 kg over 2 weeks while maintaining boxing performance and strength:
+
+* **Calorie Target:** Approximately 2,200 calories (moderate deficit for 75 kg athlete)
+* **Macronutrient Breakdown:** Protein (165g), Fat (55g), Carbs (280g)
+
+## Meal Plan:
+
+* **Breakfast (7:00 AM):** Oatmeal (70g dry weight) with banana (120g), almond butter (20g), and cinnamon.
+    * Protein: 12g, Fat: 12g, Carbs: 55g
+
+* **Mid-Morning Snack (10:00 AM):** Rice cakes (30g) with honey (15g) and sunflower seed butter (25g).
+    * Protein: 8g, Fat: 12g, Carbs: 35g
+
+* **Pre-Training Snack (12:00 PM):** White bread (50g) with lean turkey slices (80g) and mustard.
+    * Protein: 28g, Fat: 3g, Carbs: 30g
+
+* **Lunch (2:00 PM):** Grilled chicken breast (150g) with white rice (100g cooked) and steamed asparagus (150g). Olive oil drizzle (10g).
+    * Protein: 45g, Fat: 12g, Carbs: 60g
+
+* **Afternoon Snack (5:00 PM):** Apple (180g) with almonds (20g).
+    * Protein: 6g, Fat: 9g, Carbs: 30g
+
+* **Dinner (7:30 PM):** Baked white fish fillet (160g) with sweet potato (150g) and green beans (200g). Lemon juice and herbs.
+    * Protein: 40g, Fat: 5g, Carbs: 50g
+
+* **Evening Snack (9:30 PM):** Coconut water (250ml) with rice protein powder (25g).
+    * Protein: 20g, Fat: 2g, Carbs: 20g
+
+This meal plan prioritizes lean proteins (chicken, fish, turkey), complex carbohydrates for boxing training energy, and eliminates all dairy and red meat while supporting a controlled caloric deficit for healthy weight loss.</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution meets all three mandatory requirements by providing daily caloric total, macronutrient breakdown, and detailed meals with portions and timing. It successfully avoids dairy and red meat, and provides adequate protein for muscle preservation. However, there are significant secondary criterion deficiencies: the caloric deficit is not properly justified against maintenance calories, the stated macros don't align with calculated meal totals, and the plan doesn't adequately address whether the 2,200 calorie target can realistically achieve the stated 3kg loss in 2 weeks (which would require extreme deficit). These are material issues for a nutrition plan but do not violate the mandatory requirements.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around long training sessions</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180 cm<br><strong>weight:</strong> 72 kg<br><strong>goal:</strong> Marathon training with a 20km long run scheduled for afternoon<br><strong>restrictions:</strong> Vegetarian, no nuts</td>
+                <td class="criteria">• Meal plan covers all three meals plus pre/post-workout nutrition timed around the afternoon long run<br>• Carbohydrate-focused with adequate protein for recovery<br>• All foods comply with vegetarian and nut-free restrictions<br>• Plan is presented in compact, easy-to-scan format for a single day</td>
+                <td class="output"><pre># One-Day Meal Plan for Marathon Training
+
+Here is a one-day meal plan for an athlete preparing for a 20km long run with vegetarian and nut-free dietary requirements:
+
+* **Calorie Target:** Approximately 3000 calories
+* **Macronutrient Breakdown:** Protein (120g), Fat (80g), Carbs (420g)
+
+## Meal Plan:
+
+* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), honey (20g), and ground flaxseed (15g). Whole milk (240ml).
+    * Protein: 16g, Fat: 9g, Carbs: 85g
+
+* **Mid-Morning Snack (10:00 AM):** Greek yogurt (200g, plain) with granola (40g) and berries (80g).
+    * Protein: 20g, Fat: 8g, Carbs: 45g
+
+* **Lunch (12:30 PM - Pre-run meal):** Whole wheat bread (80g) with hummus (60g), sliced cucumber (100g), tomato (80g), and lettuce (50g). Orange (150g).
+    * Protein: 14g, Fat: 8g, Carbs: 68g
+
+* **Pre-Run Snack (2:30 PM - 1.5 hours before run):** Rice cakes (50g) with peanut butter alternative (tahini, 30g) and jam (20g).
+    * Protein: 10g, Fat: 12g, Carbs: 45g
+
+* **During Long Run (4:00-5:30 PM):** Sports drink (500ml) with electrolytes and simple carbs.
+    * Protein: 0g, Fat: 0g, Carbs: 60g
+
+* **Post-Run Snack (5:45 PM):** Chocolate milk (400ml, 2% milk) with banana (120g).
+    * Protein: 16g, Fat: 8g, Carbs: 65g
+
+* **Dinner (7:30 PM):** Lentil curry (250g cooked) with brown rice (150g cooked), spinach (100g), and olive oil (15ml). Side salad with mixed greens (150g) and balsamic vinegar (15ml).
+    * Protein: 28g, Fat: 18g, Carbs: 85g
+
+* **Evening Snack (9:30 PM):** Whole grain toast (50g) with almond butter alternative (sunflower seed butter, 25g) and honey (15g).
+    * Protein: 8g, Fat: 10g, Carbs: 30g
+
+---
+
+This meal plan prioritizes complex carbohydrates for sustained energy during marathon training, adequate protein for muscle recovery, and strategic timing around the long run. All foods are vegetarian and nut-free, focusing on budget-friendly whole foods like legumes, grains, and seeds.</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution comprehensively meets all mandatory requirements with precise caloric targets, detailed macronutrient breakdowns, and exact portion sizes with timing. The meal plan demonstrates strong understanding of sports nutrition principles with strategic carbohydrate loading, adequate protein (16% of calories), and intelligent pre/during/post-run nutrition timing. All dietary restrictions are properly addressed. The format is well-organized and scannable despite the number of meals. Minor weaknesses relate to carbohydrate optimization for marathon training and the breadth of the meal plan, but these do not violate stated criteria. The solution directly addresses the task requirements without unnecessary elaboration.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

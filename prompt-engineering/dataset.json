@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "75 kg",
+      "goal": "Lose 3 kg over 2 weeks while maintaining boxing performance and strength",
+      "restrictions": "No dairy, no red meat"
+    },
+    "solution_criteria": [
+      "Meal plan spans exactly 1 day with breakfast, lunch, dinner, and snacks",
+      "Total daily calories support a moderate deficit (approximately 500-750 kcal below maintenance)",
+      "All meals respect dietary restrictions (dairy-free, no red meat)",
+      "Includes adequate protein (minimum 1.6g per kg body weight) to preserve muscle during weight loss"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport requiring weight management (boxer or wrestler) needing balanced nutrition within a specific caloric deficit while maintaining performance"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon training with a 20km long run scheduled for afternoon",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus pre/post-workout nutrition timed around the afternoon long run",
+      "Carbohydrate-focused with adequate protein for recovery",
+      "All foods comply with vegetarian and nut-free restrictions",
+      "Plan is presented in compact, easy-to-scan format for a single day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around long training sessions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Build muscle and strength with a calorie surplus for weightlifting",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with at least 4 eating occasions",
+      "Provides protein-focused meals with minimum 2.0g protein per kg bodyweight (170g total)",
+      "Includes calorie surplus of 300-500 calories above maintenance for muscle building",
+      "Meals are compact and concise (brief descriptions, not lengthy recipes)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing protein-focused meals distributed across the day with strategic calorie surplus"
+  }
+]
